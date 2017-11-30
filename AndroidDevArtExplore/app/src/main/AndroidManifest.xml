@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.devartexplore">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- launch mode setting -->
+        <activity android:name=".launchmode.LaunchEntryActivity"></activity>
+        <activity android:name=".launchmode.StandardBActivity"></activity>
+        <activity android:name=".launchmode.StandardAActivity"></activity>
+
+        <activity
+            android:name=".launchmode.SingleTopAActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".launchmode.SingleTopBActivity"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name=".launchmode.SingleTaskAActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".launchmode.SingleTaskBActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".launchmode.SingleTaskCActivity"
+            android:launchMode="singleTask" />
+
+        <activity android:name=".launchmode.SingleInstanceAActivity"></activity>
+        <activity
+            android:name=".launchmode.SingleInstanceBActivity"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.gj.singleinstance"></activity>
+
+        <!-- intent action -->
+        <activity android:name=".intentfilter.IntentEntryActivity"></activity>
+        <activity android:name=".intentfilter.IntentActionActivity">
+            <intent-filter>
+                <action android:name="com.android.action.a"></action>
+                <action android:name="com.android.action.b"></action>
+
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".intentfilter.IntentDataActivity">
+            <intent-filter>
+                <action android:name="com.android.data.test"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+                <data
+                    android:host="com.android.data"
+                    android:port="3006"
+                    android:scheme="dev"></data>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
