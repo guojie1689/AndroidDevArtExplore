@@ -12,21 +12,22 @@
     tools:context="com.android.devartexplore.MainActivity">
 
     <Button
-        android:id="@+id/btn_launchmode"
+        android:id="@+id/btn_askServer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="launchmode" />
+        android:text="访问Service" />
 
     <Button
-        android:id="@+id/btn_intent_filter"
+        android:id="@+id/btn_toaidl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="intentFilter" />
+        android:text="aidl形式" />
 
     <Button
-        android:id="@+id/btn_ipc"
+        android:id="@+id/btn_content_provider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="IPC" />
+        android:text="contentprovider" />
+
 
 </LinearLayout>
