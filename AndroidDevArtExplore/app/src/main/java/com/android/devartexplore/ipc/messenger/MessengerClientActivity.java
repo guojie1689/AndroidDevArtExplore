@@ -17,6 +17,7 @@ import android.widget.Button;
 import com.android.devartexplore.BaseActivity;
 import com.android.devartexplore.R;
 import com.android.devartexplore.ipc.aidl.BookManagerActivity;
+import com.android.devartexplore.ipc.binderpool.BinderPoolActivity;
 import com.android.devartexplore.ipc.contentprovider.ProviderEntryActivity;
 
 import butterknife.BindView;
@@ -30,6 +31,12 @@ public class MessengerClientActivity extends BaseActivity {
     @OnClick(R.id.btn_content_provider)
     public void toContentProvider() {
         Intent intent = new Intent(this, ProviderEntryActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_binder_pool)
+    public void toBinderPool() {
+        Intent intent = new Intent(this, BinderPoolActivity.class);
         startActivity(intent);
     }
 

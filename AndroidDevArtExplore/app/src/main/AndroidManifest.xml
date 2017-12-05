@@ -71,6 +71,7 @@
         <activity android:name=".ipc.messenger.MessengerClientActivity"></activity>
         <activity android:name=".ipc.aidl.BookManagerActivity"></activity>
         <activity android:name=".ipc.contentprovider.ProviderEntryActivity"></activity>
+        <activity android:name=".ipc.binderpool.BinderPoolActivity"></activity>
 
         <service
             android:name=".ipc.messenger.MessengerService"
@@ -80,6 +81,12 @@
         <service
             android:name=".ipc.aidl.BookManagerService"
             android:process=":remote"></service>
+
+        <service
+            android:name=".ipc.binderpool.BinderPoolService"
+            android:process=":remote">
+
+        </service>
 
         <provider
             android:name=".ipc.contentprovider.BookProvider"
