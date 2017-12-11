@@ -17,6 +17,7 @@ public class AdtApplication extends Application {
 
         Utils.init(this);
         LogUtils.getConfig().setBorderSwitch(false);
+        LogUtils.getConfig().setLogHeadSwitch(false);
 
     }
 }

@@ -11,23 +11,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.android.devartexplore.MainActivity">
 
-    <TextView
-        android:id="@+id/txt_info"
+    <Button
+        android:id="@+id/btn_section1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="ddfdsfs"
-        android:textColor="#FF0000"
-        android:textSize="20dp" />
+        android:text="场景1" />
 
-    <TextView
-        android:id="@+id/txt_info1"
+    <Button
+        android:id="@+id/btn_section2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="fdsafdsafsa"
-        android:textColor="#FF0000"
-        android:textSize="20dp" />
+        android:text="场景2" />
 
 
 </LinearLayout>

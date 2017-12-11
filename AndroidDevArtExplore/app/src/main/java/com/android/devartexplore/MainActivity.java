@@ -1,13 +1,16 @@
 package com.android.devartexplore;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 
+import com.android.devartexplore.drawable.DrawableActivity;
 import com.android.devartexplore.intentfilter.IntentEntryActivity;
 import com.android.devartexplore.ipc.messenger.MessengerClientActivity;
 import com.android.devartexplore.launchmode.LaunchEntryActivity;
+import com.android.devartexplore.removeview.RemoteViewActivity;
+import com.android.devartexplore.view.ViewMeasureActivity;
+import com.android.devartexplore.viewevent.ViewEventActivity;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -43,9 +46,29 @@ public class MainActivity extends BaseActivity {
         MessengerClientActivity.startActivity(this);
     }
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    @OnClick(R.id.btn_view_event)
+    public void toViewEventActivity() {
+        Intent intent = new Intent(this, ViewEventActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_view_work_impl)
+    public void toViewActivity() {
+        Intent intent = new Intent(this, ViewMeasureActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_view_remote_view)
+    public void openRemoteView() {
+        Intent intent = new Intent(this, RemoteViewActivity.class);
+        startActivity(intent);
+
+    }
+
+    @OnClick(R.id.btn_drawable)
+    public void openDrawableView() {
+        Intent intent = new Intent(this, DrawableActivity.class);
+        startActivity(intent);
 
     }
 

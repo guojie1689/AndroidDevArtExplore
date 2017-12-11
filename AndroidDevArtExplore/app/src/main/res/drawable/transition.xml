@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/btn_download_blue"></item>
+    <item android:drawable="@drawable/btn_download_press_blue"></item>
+
+</transition>

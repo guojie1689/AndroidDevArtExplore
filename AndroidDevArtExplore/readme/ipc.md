@@ -49,3 +49,4 @@ getContentResolver().registerContentObserver(bookUri, false, contentObserver);
 getContentResolver().unregisterContentObserver(contentObserver);
 5） ContextProvider当数据改变时通知
 mContext.getContentResolver().notifyChange(uri, null);
+6. BInder连接池

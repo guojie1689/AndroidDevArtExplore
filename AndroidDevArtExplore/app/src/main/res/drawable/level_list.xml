@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/input_correct"
+        android:maxLevel="50"
+        android:minLevel="0">
+
+    </item>
+
+    <item
+        android:drawable="@drawable/input_faild"
+        android:maxLevel="100"
+        android:minLevel="50"></item>
+
+
+</level-list>
